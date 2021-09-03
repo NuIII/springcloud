@@ -1,19 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c55c5ba-400a-4198-b8e1-b7cd08e0d630" name="Changes" comment="" />
+    <list default="true" id="2c55c5ba-400a-4198-b8e1-b7cd08e0d630" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/OrderMain80.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/enums/ResponseCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/exception/Asserts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/exception/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/exception/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/response/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/response/DataResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/response/PageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/response/ResponseBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/entity/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/enums/ResponseCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/exception/Asserts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/exception/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/exception/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/response/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/response/DataResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/response/PageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/response/ResponseBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/PaymentMain8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/PaymentMain8001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/entity/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/mapper/PaymentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/mapper/PaymentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -44,6 +79,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -51,8 +87,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -62,14 +99,26 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud" />
+      <recent name="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common" />
+      <recent name="$PROJECT_DIR$/cloud-customer-order80/src/main/java" />
+      <recent name="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud" />
       <recent name="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.springcloud" />
+      <recent name="com.atguigu.springcloud.common.enums" />
       <recent name="com.atguigu.springcloud.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CodeGenerator">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PaymentMain8001">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.springcloud.util.CodeGenerator" />
       <module name="cloud-provider-payment8001" />
@@ -79,6 +128,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-customer-order80" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.OrderMain80" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,8 +160,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CodeGenerator" />
+        <item itemvalue="Spring Boot.OrderMain80" />
         <item itemvalue="Spring Boot.PaymentMain8001" />
+        <item itemvalue="Application.CodeGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -112,11 +175,15 @@
       <option name="presentableId" value="Default" />
       <updated>1630506353450</updated>
       <workItem from="1630506355779" duration="13937000" />
-      <workItem from="1630645833167" duration="2397000" />
+      <workItem from="1630645833167" duration="19901000" />
+      <workItem from="1630679976155" duration="3382000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

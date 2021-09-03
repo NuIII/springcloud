@@ -2,6 +2,7 @@ package com.atguigu.springcloud.payment.mapper;
 
 import com.atguigu.springcloud.payment.entity.Payment;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.mapstruct.Mapper;
 
 /**
  * <p>

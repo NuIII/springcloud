@@ -11,6 +11,22 @@ spring:
     username: root
     password: 123456789
 
-mybatis:
-  mapperLocations: classpath:mapper/*.xml
-  type-aliases-package: com.atguigu.springcloud.entities
+#mybatis:
+#  mapperLocations: classpath*:/mapper/*Mapper.xml
+#  type-aliases-package:
+
+# mybaits-plus配置
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  global-config:
+    banner: false
+    db-config:
+      id-type: ASSIGN_ID
+      insert-strategy: NOT_NULL
+      update-strategy: NOT_NULL
+      table-underline: true
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+  type-handlers-package: com.womi.java.modules.common.handle

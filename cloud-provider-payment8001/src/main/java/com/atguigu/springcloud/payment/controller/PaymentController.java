@@ -1,21 +1,41 @@
 package com.atguigu.springcloud.payment.controller;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import com.atguigu.springcloud.common.response.BaseResponse;
+import com.atguigu.springcloud.common.response.ResponseBuilder;
+import com.atguigu.springcloud.payment.entity.Payment;
+import com.atguigu.springcloud.payment.service.IPaymentService;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RestController;
+import javax.annotation.Resource;
 
 /**
  * <p>
- *  前端控制器
+ * 前端控制器
  * </p>
  *
  * @author QiCheng.Wang
  * @since 2021-09-03
  */
 @RestController
-@RequestMapping("/payment/payment")
+@RequestMapping("/payment")
 public class PaymentController {
+
+    @Resource
+    private IPaymentService paymentService;
+
+    @PostMapping(value = "/create")
+    public BaseResponse create(Payment payment) {
+        paymentService.save(payment);
+        return ResponseBuilder.ok();
+    }
+
+
+    @GetMapping(value = "/get/{id}")
+    public BaseResponse create(@PathVariable("id") Long id) {
+        Payment payment = paymentService.getById(id);
+        return ResponseBuilder.ok(payment);
+    }
 
 }
 
