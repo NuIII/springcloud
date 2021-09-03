@@ -1,0 +1,46 @@
+package ${package.Service};
+
+import ${cfg.gysBasicEntityPackage}.${entity};
+import java.util.List;
+import java.util.Map;
+import com.gys.common.data.PageInfo;
+import com.gys.common.response.Result;
+import com.gys.common.data.GetLoginOutData;
+import com.gys.common.data.PageInfo;
+
+/**
+ * <p>
+ * $!{table.comment} 服务类
+ * </p>
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+#if(${kotlin})
+interface ${table.serviceName} : ${superServiceClass}<${entity}>
+#else
+public interface ${table.serviceName} {
+
+        //新增初始化
+        Map<String,Object> buildInit(GetLoginOutData userInfo) ;
+
+        //新增
+        Object build(GetLoginOutData userInfo,Object inData) ;
+
+        //修改初始化
+        Map<String,Object> updateInit(GetLoginOutData userInfo,Integer id) ;
+
+        //修改
+        Object update(GetLoginOutData userInfo,Object updateVo) ;
+
+        //删除
+        int delete(GetLoginOutData userInfo,Integer id) ;
+
+        //详情
+        Object getDetailById(GetLoginOutData userInfo,Integer id) ;
+
+
+        //获取分页列表
+        PageInfo getListPage(GetLoginOutData userInfo,Object inData) ;
+}
+#end
