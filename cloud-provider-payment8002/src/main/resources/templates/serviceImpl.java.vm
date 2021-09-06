@@ -1,0 +1,227 @@
+package ${package.ServiceImpl};
+
+import ${cfg.gysBasicEntityPackage}.${entity};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.beans.BeanUtils;
+import cn.hutool.core.util.StrUtil;
+import cn.hutool.core.util.ObjectUtil;
+import com.github.pagehelper.PageHelper;
+import com.gys.common.data.PageInfo;
+import com.gys.common.response.Result;
+import com.gys.common.data.GetLoginOutData;
+import com.gys.common.data.PageInfo;
+import com.gys.common.exception.BusinessException;
+
+import java.util.*;
+
+
+/**
+ * <p>
+ * $!{table.comment} 服务实现类
+ * </p>
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+@Service
+@Transactional(rollbackFor = Exception.class)//事务回滚
+#if(${kotlin})
+open class ${table.serviceImplName} : ${superServiceImplClass}<${table.mapperName}, ${entity}>(), ${table.serviceName} {
+        @Autowired
+        private ${table.mapperName} ${cfg.cleanName}Dao;
+}
+#else
+public class ${table.serviceImplName} implements ${table.serviceName} {
+        @Autowired
+        private ${table.mapperName} ${cfg.cleanName}Mapper;
+
+
+
+        //============================  新增初始化  ==========================
+
+        @Override
+        public Map<String,Object> buildInit(GetLoginOutData userInfo) {
+            if (userInfo == null) {
+                throw new BusinessException("请重新登陆");
+            }
+            Map<String,Object> resultMap = new HashMap<>();
+            //业务逻辑
+
+            return resultMap;
+        }
+
+        //============================  新增初始化  ==========================
+
+
+
+
+
+
+        //============================  新增  ==========================
+
+        @Override
+        public Object build(GetLoginOutData userInfo,Object inData) {
+            if (userInfo == null) {
+                throw new BusinessException("请重新登陆");
+            }
+            //数据验证
+
+            //封装入库实体
+            ${entity} ${cfg.cleanName} = new ${entity}();
+            BeanUtils.copyProperties(inData, ${cfg.cleanName});
+            //处理逻辑
+
+            //处理逻辑
+            ${cfg.cleanName}Mapper.insert(${cfg.cleanName});
+            return null;
+        }
+
+
+        //============================  新增  ==========================
+
+
+
+
+
+        //============================  修改初始化  ==========================
+        @Override
+        public Map<String,Object> updateInit(GetLoginOutData userInfo, Integer id)  {
+
+            if (userInfo == null) {
+                throw new BusinessException("请重新登陆");
+            }
+            if (id == null) {
+                throw new BusinessException("请传入id");
+            }
+            Map<String,Object> res = new HashMap<>();
+            //查询出db对象
+            ${entity} ${entity}Db = ${cfg.cleanName}Mapper.selectByPrimaryKey(id);
+            if (${entity}Db == null) {
+                throw new BusinessException("查询无此数据");
+            }
+            //业务逻辑
+            return res;
+        }
+
+        //============================  修改初始化  ==========================
+
+
+
+
+
+        //============================  修改  ==========================
+        @Override
+        public Object update(GetLoginOutData userInfo,Object inData)  {
+            if (userInfo == null) {
+                throw new BusinessException("请重新登陆");
+            }
+            //if (ObjectUtil.isEmpty(inData) || inData.getId() == null) {
+            //    throw new BusinessException("请传入合法数据！");
+            //}
+            //查询出db对象
+            //${entity} ${entity}Db = ${cfg.cleanName}Mapper.selectByPrimaryKey(id);
+            //if (${entity}Db == null) {
+            //    throw new BusinessException("查询无此数据");
+            //}
+            //封装入库实体
+            ${entity} ${cfg.cleanName} = new ${entity}();
+            //处理更新逻辑
+
+
+            //处理更新逻辑
+
+            ${cfg.cleanName}Mapper.updateByPrimaryKey(${cfg.cleanName});
+            return null;
+        }
+
+
+        //============================  修改  ==========================
+
+
+
+
+
+        //============================  删除  ==========================
+        @Override
+        public int delete(GetLoginOutData userInfo,Integer id)  {
+            if (userInfo == null) {
+                throw new BusinessException("请重新登陆");
+            }
+            if (id == null) {
+                throw new BusinessException("请传入合法数据！");
+            }
+            ${entity} ${cfg.cleanName}Db = ${cfg.cleanName}Mapper.selectByPrimaryKey(id);
+            if (${cfg.cleanName}Db == null) {
+                throw new BusinessException("查无此数据！");
+            }
+            return ${cfg.cleanName}Mapper.deleteByPrimaryKey(id);
+        }
+
+        //============================  删除  ==========================
+
+
+
+
+
+        //============================  详情  ==========================
+        @Override
+        public Object getDetailById(GetLoginOutData userInfo,Integer id)  {
+            Object res = new Object();
+            if (userInfo == null) {
+                throw new BusinessException("请重新登陆");
+            }
+            //查询出db对象
+            ${entity} ${entity}Db = ${cfg.cleanName}Mapper.selectByPrimaryKey(id);
+            if (${entity}Db == null) {
+                throw new BusinessException("查询无此数据");
+            }
+            //业务逻辑处理最终返回值
+
+            return res;
+        }
+
+
+        //============================  详情  ==========================
+
+
+
+
+
+        //============================  获取列表（分页）  ==========================
+
+        @Override
+        public PageInfo<Object> getListPage(GetLoginOutData userInfo,Object inData) {
+            if (userInfo == null) {
+                throw new BusinessException("请重新登陆");
+            }
+            //if(inData.getPageSize()==null){
+            //    inData.setPageSize(100);
+            //}
+            //if(inData.getPageNum()==null){
+            //    inData.setPageNum(1);
+            //}
+            List<Object> resList = new ArrayList<>();
+            PageInfo pageInfo;
+
+            //实际执行的sql，执行定制任务
+            //PageHelper.startPage(inData.getPageNum(), inData.getPageSize());
+            if (ObjectUtil.isNotEmpty(resList)) {
+                //处理返回时可能要处理的转换工作
+
+                pageInfo = new PageInfo(resList);
+            } else {
+                pageInfo = new PageInfo();
+            }
+            return pageInfo;
+        }
+
+
+        //============================  获取列表（分页）  ==========================
+}
+#end

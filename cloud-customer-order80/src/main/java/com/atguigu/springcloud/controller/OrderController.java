@@ -21,14 +21,14 @@ import javax.annotation.Resource;
 @RequestMapping("/payment")
 public class OrderController {
 
-    public final String PAYMENT_URL = "http://localhost:8001";
+    public final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     @Resource
     private RestTemplate restTemplate;
 
 
     @PostMapping(value = "/customer/create")
-    public BaseResponse create(Payment payment) {
+    public BaseResponse create(@RequestBody Payment payment) {
         return restTemplate.postForObject(PAYMENT_URL + "/payment/create", payment, DataResponse.class);
     }
 

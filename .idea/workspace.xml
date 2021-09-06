@@ -5,34 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c55c5ba-400a-4198-b8e1-b7cd08e0d630" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/OrderMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/enums/ResponseCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/exception/Asserts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/exception/MyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/response/BaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/response/DataResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/response/PageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/response/ResponseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/enums/ResponseCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/exception/Asserts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/exception/MyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/response/BaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/response/DataResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/response/PageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/response/ResponseBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-api-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-eureka-server7001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/java/com/atguigu/springcloud/EurekaMain7001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-eureka-server7002/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-eureka-server7002/src/main/java/com/atguigu/springcloud/EurekaMain7002.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-eureka-server7002/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/atguigu/springcloud/PaymentMain8002.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/atguigu/springcloud/payment/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/atguigu/springcloud/payment/mapper/PaymentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/atguigu/springcloud/payment/service/IPaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/atguigu/springcloud/payment/service/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/atguigu/springcloud/util/CodeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/atguigu/springcloud/util/ConvertUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/mapper/PaymentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/templates/controller.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/templates/entity.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/templates/mapper.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/templates/mapper.xml.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/templates/service.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/templates/serviceImpl.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-customer-order80/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/OrderMain80.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/OrderMain80.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/enums/ResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-common/src/main/java/com/atguigu/springcloud/common/enums/ResponseCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/exception/Asserts.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-common/src/main/java/com/atguigu/springcloud/common/exception/Asserts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/exception/MyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-common/src/main/java/com/atguigu/springcloud/common/exception/MyException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-common/src/main/java/com/atguigu/springcloud/common/exception/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/response/BaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-common/src/main/java/com/atguigu/springcloud/common/response/BaseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/response/DataResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-common/src/main/java/com/atguigu/springcloud/common/response/DataResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/response/PageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-common/src/main/java/com/atguigu/springcloud/common/response/PageResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common/response/ResponseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-common/src/main/java/com/atguigu/springcloud/common/response/ResponseBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/config/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-common/src/main/java/com/atguigu/springcloud/entity/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-customer-order80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-customer-order80/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/PaymentMain8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/PaymentMain8001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/enums/ResponseCodeEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/exception/Asserts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/exception/MyException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/exception/ServiceException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/response/BaseResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/response/DataResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/response/PageResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/common/response/ResponseBuilder.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/entity/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/entity/Payment.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/mapper/PaymentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/mapper/PaymentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/service/IPaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/service/IPaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/service/impl/PaymentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/payment/service/impl/PaymentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/mapper/PaymentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/mapper/PaymentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,24 +116,30 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-eureka-server7002/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.10881394" />
-    <property name="project.structure.side.proportion" value="0.46290144" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="project.structure.side.proportion" value="0.122249365" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
+    <property name="settings.editor.splitter.proportion" value="0.2968889" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cloud-eureka-server7002/src/main/resources" />
+      <recent name="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources" />
+      <recent name="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java" />
+      <recent name="$PROJECT_DIR$/cloud-api-common/src/main/java/com/atguigu/springcloud" />
       <recent name="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud" />
-      <recent name="$PROJECT_DIR$/cloud-customer-order80/src/main/java/com/atguigu/springcloud/common" />
-      <recent name="$PROJECT_DIR$/cloud-customer-order80/src/main/java" />
-      <recent name="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud" />
-      <recent name="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.atguigu.springcloud" />
+      <recent name="com.atguigu.springcloud.entity" />
       <recent name="com.atguigu.springcloud.common.enums" />
       <recent name="com.atguigu.springcloud.util" />
     </key>
@@ -132,6 +165,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaMain7001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-eureka-server7001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.EurekaMain7001" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaMain7002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-eureka-server7002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.EurekaMain7002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-customer-order80" />
       <extension name="coverage">
@@ -141,6 +202,8 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.OrderMain80" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,15 +221,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentMain8002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-provider-payment8002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.PaymentMain8002" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CodeGenerator" />
+      <item itemvalue="Spring Boot.PaymentMain8002" />
+      <item itemvalue="Spring Boot.EurekaMain7001" />
+      <item itemvalue="Spring Boot.OrderMain80" />
+      <item itemvalue="Spring Boot.PaymentMain8001" />
+      <item itemvalue="Spring Boot.EurekaMain7002" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.OrderMain80" />
         <item itemvalue="Spring Boot.PaymentMain8001" />
-        <item itemvalue="Application.CodeGenerator" />
+        <item itemvalue="Spring Boot.OrderMain80" />
+        <item itemvalue="Spring Boot.EurekaMain7001" />
+        <item itemvalue="Spring Boot.EurekaMain7002" />
+        <item itemvalue="Spring Boot.EurekaMain7002" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2c55c5ba-400a-4198-b8e1-b7cd08e0d630" name="Changes" comment="" />
@@ -176,7 +261,7 @@
       <updated>1630506353450</updated>
       <workItem from="1630506355779" duration="13937000" />
       <workItem from="1630645833167" duration="19901000" />
-      <workItem from="1630679976155" duration="3382000" />
+      <workItem from="1630679976155" duration="30371000" />
     </task>
     <servers />
   </component>
@@ -185,5 +270,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cloud2020$EurekaMain7002.ic" NAME="EurekaMain7002 Coverage Results" MODIFIED="1630763217984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.atguigu.springcloud.*</FILTER>
+    </SUITE>
   </component>
 </project>

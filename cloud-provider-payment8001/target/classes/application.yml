@@ -11,10 +11,6 @@ spring:
     username: root
     password: 123456789
 
-#mybatis:
-#  mapperLocations: classpath*:/mapper/*Mapper.xml
-#  type-aliases-package:
-
 # mybaits-plus配置
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*Mapper.xml
@@ -30,3 +26,17 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
   type-handlers-package: com.womi.java.modules.common.handle
+
+eureka:
+  client:
+    #将自己入驻进EurekaServer
+    register-with-eureka: true
+    # 是否从EurekaServer抓取已有的注册信息，默认为true。单节点无所谓，集群必须为true,才能配合ribbon使用负载均衡
+    fetchRegistry: true
+    service-url:
+#      defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+  instance:
+    instance-id: payment8001
+    #访问路径就能显示ip
+    prefer-ip-address: true

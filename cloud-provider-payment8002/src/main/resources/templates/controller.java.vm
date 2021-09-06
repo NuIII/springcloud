@@ -1,0 +1,102 @@
+package ${package.Controller};
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import ${package.Service}.${table.serviceName};
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import com.gys.common.data.GetLoginOutData;
+import com.gys.common.data.JsonResult;
+import javax.servlet.http.HttpServletRequest;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import java.util.HashMap;
+import java.util.Map;
+
+#if(${restControllerStyle})
+#else
+import org.springframework.stereotype.Controller;
+#end
+#if(${superControllerClassPackage})
+import ${superControllerClassPackage};
+#end
+
+/**
+ * <p>
+ * $!{table.comment} 前端控制器
+ * </p>
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+#if(${restControllerStyle})
+@RestController
+#else
+@Controller
+#end
+@Api(tags = "${table.comment}接口")
+@RequestMapping("/${cfg.cleanName}")
+#if(${kotlin})
+class ${table.controllerName}#if(${superControllerClass}) : ${superControllerClass}()#end
+
+#else
+    #if(${superControllerClass})
+    public class ${table.controllerName} extends ${superControllerClass} {
+    #else
+##    @Api(value = "", tags = "")
+    public class ${table.controllerName} {
+    #end
+
+// 可在模版中添加相应的controller通用方法，编辑模版在resources/templates/controller.java.vm文件中
+
+        @Autowired
+        private ${table.serviceName} ${cfg.cleanName}Service;
+
+        @GetMapping("/buildInit")
+        @ApiOperation(value = "${table.comment}新增初始化", notes = "${table.comment}新增初始化")
+        public JsonResult buildInit(HttpServletRequest request) {
+            GetLoginOutData userInfo = this.getLoginUser(request);
+            return JsonResult.success(${cfg.cleanName}Service.buildInit(userInfo), "提示：获取数据成功！");
+        }
+
+        @PostMapping("/save")
+        @ApiOperation(value = "${table.comment}新增", notes = "${table.comment}新增")
+        public JsonResult save(HttpServletRequest request, @RequestBody Object inData) {
+            GetLoginOutData userInfo = this.getLoginUser(request);
+            return JsonResult.success(${cfg.cleanName}Service.build(userInfo,inData), "提示：保存成功！");
+        }
+
+        @GetMapping("/editInit/{id}")
+        @ApiOperation(value = "${table.comment}编辑初始化", notes = "${table.comment}编辑初始化")
+        public JsonResult updateInit(HttpServletRequest request, @PathVariable(value = "id") Integer id) {
+            GetLoginOutData userInfo = this.getLoginUser(request);
+            return JsonResult.success(${cfg.cleanName}Service.updateInit(userInfo,id),"提示：获取数据成功！");
+        }
+
+        @PostMapping("/edit")
+        @ApiOperation(value = "${table.comment}修改", notes = "${table.comment}修改")
+        public JsonResult update(HttpServletRequest request, @RequestBody Object inData) {
+            GetLoginOutData userInfo = this.getLoginUser(request);
+            return JsonResult.success(${cfg.cleanName}Service.update(userInfo,inData),"提示：修改成功！");
+        }
+
+
+
+        @GetMapping("/delete/{id}")
+        @ApiOperation(value = "${table.comment}删除", notes = "${table.comment}删除")
+        public JsonResult delete(HttpServletRequest request, @PathVariable(value = "id") Integer id) {
+            GetLoginOutData userInfo = this.getLoginUser(request);
+            return JsonResult.success(${cfg.cleanName}Service.delete(userInfo,id),"提示：删除成功！");
+        }
+
+
+        @PostMapping("/list")
+        @ApiOperation(value = "${table.comment}查询（分页）", notes = "${table.comment}查询（分页）")
+        public JsonResult listPage(HttpServletRequest request, @RequestBody Object inData) {
+            GetLoginOutData userInfo = this.getLoginUser(request);
+            return JsonResult.success(${cfg.cleanName}Service.getListPage(userInfo,inData), "提示：查询成功！");
+        }
+
+    }
+
+#end
