@@ -10,6 +10,8 @@
         <module name="cloud-customer-order80" />
         <module name="cloud-provider-payment8002" />
         <module name="cloud-api-common" />
+        <module name="cloud-provider-payment8004" />
+        <module name="cloud-customerzk-order80" />
         <module name="cloud-eureka-server7001" />
         <module name="cloud-provider-payment8001" />
         <module name="cloud-eureka-server7002" />
