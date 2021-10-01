@@ -1,0 +1,5 @@
+com/atguigu/springcloud/payment/mapper/PaymentMapper.class
+com/atguigu/springcloud/payment/controller/PaymentController.class
+com/atguigu/springcloud/payment/service/IPaymentService.class
+com/atguigu/springcloud/PaymentMain8004.class
+com/atguigu/springcloud/payment/service/impl/PaymentServiceImpl.class
