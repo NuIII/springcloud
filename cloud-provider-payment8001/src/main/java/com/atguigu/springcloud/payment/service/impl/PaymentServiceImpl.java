@@ -1,5 +1,6 @@
 package com.atguigu.springcloud.payment.service.impl;
 
+import com.atguigu.springcloud.common.exception.ServiceException;
 import com.atguigu.springcloud.entity.Payment;
 import com.atguigu.springcloud.payment.mapper.PaymentMapper;
 import com.atguigu.springcloud.payment.service.IPaymentService;
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author QiCheng.Wang

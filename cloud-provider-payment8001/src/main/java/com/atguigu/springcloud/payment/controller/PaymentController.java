@@ -2,6 +2,7 @@ package com.atguigu.springcloud.payment.controller;
 
 
 import com.atguigu.springcloud.common.response.BaseResponse;
+import com.atguigu.springcloud.common.response.DataResponse;
 import com.atguigu.springcloud.common.response.ResponseBuilder;
 import com.atguigu.springcloud.entity.Payment;
 import com.atguigu.springcloud.payment.service.IPaymentService;
@@ -44,7 +45,7 @@ public class PaymentController {
 
 
     @GetMapping(value = "/get/{id}")
-    public BaseResponse create(@PathVariable("id") Long id) {
+    public BaseResponse get(@PathVariable("id") Long id) {
         Payment payment = paymentService.getById(id);
         return ResponseBuilder.ok(payment, "端口号" + serverPort);
     }
@@ -58,6 +59,17 @@ public class PaymentController {
         map.put("instance", instances);
 
         return ResponseBuilder.ok(map, "端口号" + serverPort);
+    }
+
+    @GetMapping(value = "/lb")
+    public BaseResponse lb() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        return ResponseBuilder.ok("端口号" + serverPort);
     }
 
 }
