@@ -63,12 +63,6 @@ public class PaymentController {
 
     @GetMapping(value = "/lb")
     public BaseResponse lb() {
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         return ResponseBuilder.ok("端口号" + serverPort);
     }
 

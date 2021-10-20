@@ -1,0 +1,35 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      #开启从注册中心动态创建路由的功能，利用服务名进行路由
+      discovery:
+        locator:
+          enabled: true
+
+      routes:
+        - id: paymeny_route1
+#          uri: http://localhost:8001
+          uri: lb://cloud-payment-service
+          predicates:
+            - Path=/payment/get/**
+            #并且Cookie是username=zhangshuai才能访问
+#            - Cookie=username,atguigu
+            #请求头中要有X-Request-Id属性并且值为整数的正则表达式
+#            - Header=TelentId, \d+
+
+
+
+eureka:
+  instance:
+    #eureka 服务端的实例名字
+    hostname: cloud-gateway-service
+  client:
+    service-url:
+      fetch-registry: true
+      # 设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+      defaultZone: http://eureka7001.com:7001/eureka/

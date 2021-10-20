@@ -1,0 +1,5 @@
+/Users/qichengwang/code/atguigu/cloud2020/cloud-cunstomer-feign-hystrix-order80/src/main/java/com/atguigu/springcloud/OrderFeignHystrixMain80.java
+/Users/qichengwang/code/atguigu/cloud2020/cloud-cunstomer-feign-hystrix-order80/src/main/java/com/atguigu/springcloud/service/PaymentFeignHystrixService.java
+/Users/qichengwang/code/atguigu/cloud2020/cloud-cunstomer-feign-hystrix-order80/src/main/java/com/atguigu/springcloud/fallback/PaymentFeignHystrixFallback.java
+/Users/qichengwang/code/atguigu/cloud2020/cloud-cunstomer-feign-hystrix-order80/src/main/java/com/atguigu/springcloud/controller/PaymentFeignHystrixController.java
+/Users/qichengwang/code/atguigu/cloud2020/cloud-cunstomer-feign-hystrix-order80/src/main/java/com/atguigu/springcloud/config/FeignLogConfig.java

@@ -1,0 +1,4 @@
+/Users/qichengwang/code/atguigu/cloud2020/cloud-customer-feign-order80/src/main/java/com/atguigu/springcloud/OrderFeignMain80.java
+/Users/qichengwang/code/atguigu/cloud2020/cloud-customer-feign-order80/src/main/java/com/atguigu/springcloud/service/PaymentFeignService.java
+/Users/qichengwang/code/atguigu/cloud2020/cloud-customer-feign-order80/src/main/java/com/atguigu/springcloud/config/FeignLogConfig.java
+/Users/qichengwang/code/atguigu/cloud2020/cloud-customer-feign-order80/src/main/java/com/atguigu/springcloud/controller/PaymentFeignController.java
