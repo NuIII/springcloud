@@ -1,0 +1,35 @@
+server:
+  port: 8888
+spring:
+  # kafka 配置
+  kafka:
+    listener:
+      missing-topics-fatal: true
+    #集群节点配置
+    bootstrap-servers: 10.20.32.145:9092
+    #消息生产者
+    producer:
+      retries: 30 # 重试次数
+      batch-size: 16384 #批量处理大小
+      linger-ms: 50  #提交延时
+      max-request-size: 104857600  #消息最大大小
+      compression-type: gzip  # 压缩方式
+      reconnect-backoff-ms: 20000 # 重连间隔
+      retry-backoff-ms: 20000 # 重试设置
+      acks: 1
+
+    #消息消费者
+    consumer:
+      concurrency: 5 # 消费时并发数，所有机器实例上总的并发度之和必须小于等于partition总数
+      enable-auto-commit: true # 是否自动提交offset
+      auto-commit-interval: 5000  # 消费者接收到消息后间隔多久提交offset
+      session-timeout: 30000 #拉取超时时间
+      auto-offset-reset: earliest  #指定消费策略(earliest|latest|none)
+      max-poll-records: 500  # 每次批量poll的数量，如果poll太多数据，而不能在下次poll之前消费完，则会触发一次负载均衡，产生卡顿
+      group-id: flow_consumer_group
+#
+#    #用于链接带密码的kafka  配置，如果kafka没有密码需要注释掉
+#    properties:
+#      sasl.mechanism: PLAIN
+#      security.protocol: SASL_PLAINTEXT
+#      sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username='aqjc' password='Yr^TH%¡22McQ';

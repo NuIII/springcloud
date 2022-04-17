@@ -10,6 +10,8 @@
         <module name="cloud-eureka-server7001" />
         <module name="cloud-eureka-server7002" />
         <module name="cloud-customerconsul-order80" />
+        <module name="seata-order-service2001" />
+        <module name="cloudalibaba-consumer-nacos-order84" />
         <module name="cloud-stream-rabbitmq-provider8801" />
         <module name="cloud-config-center-3344" />
         <module name="cloud-customerzk-order80" />
@@ -18,18 +20,25 @@
         <module name="cloud-stream-rabbitmq-customer8803" />
         <module name="cloud-stream-rabbitmq-customer8802" />
         <module name="cloud-providerconsul-payment8006" />
+        <module name="cloudalibaba-config-nacos-client3377" />
         <module name="cloud-customer-order80" />
         <module name="cloud-provider-payment8002" />
         <module name="cloud-customer-feign-order80" />
         <module name="cloud-api-common" />
         <module name="cloud-provider-payment8004" />
         <module name="cloud-provider-payment8001" />
+        <module name="cloudalibaba-provider-payment9004" />
+        <module name="cloudalibaba-provider-payment9003" />
         <module name="cloudalibaba-provider-payment9002" />
         <module name="cloudalibaba-provider-payment9001" />
         <module name="cloudalibaba-consumer-nacos-order83" />
         <module name="cloud-cunstomer-feign-hystrix-order80" />
         <module name="cloud-gateway-gateway9527" />
+        <module name="seata-account-service2003" />
+        <module name="kafka" />
+        <module name="seata-storage-service2002" />
         <module name="cloud-customer-hystrix-dashboard9001" />
+        <module name="cloudalibaba-sentinel-service8401" />
         <module name="cloud-config-client-3355" />
       </profile>
     </annotationProcessing>

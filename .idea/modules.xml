@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud-stream-rabbitmq-customer8802/cloud-stream-rabbitmq-provider8802.iml" filepath="$PROJECT_DIR$/cloud-stream-rabbitmq-customer8802/cloud-stream-rabbitmq-provider8802.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-stream-rabbitmq-customer8803/cloud-stream-rabbitmq-provider8803.iml" filepath="$PROJECT_DIR$/cloud-stream-rabbitmq-customer8803/cloud-stream-rabbitmq-provider8803.iml" />
+    </modules>
+  </component>
+</project>
